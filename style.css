@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  font-family: 'Karla', sans-serif;
+}
+
+:root {
+  --bgcolor: #292929;
+  --accentcolor: #4169e1;
+  --logocolor: #ffffff;
+}
+
+body {
+  background-color: var(--bgcolor);
+}
+
+.link-tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  margin: 4rem auto;
+  gap: 2rem;
+}
+.link-tree .logo {
+  width: 15rem;
+  height: 9rem;
+  border-radius: 50%;
+  background-color: var(--logocolor);
+}
+
+.link-tree .logo:hover {
+  background-color: var(--logocolor);
+}
+
+.link-tree h1 {
+  font-size: 1.5rem;
+}
+
+.link-tree h2 {
+  font-size: 0.8rem;
+}
+
+.link-tree a {
+  background-color: var(--accentcolor);
+  color: var(--bgcolor);
+  width: 100%;
+  padding: 0.7rem;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: solid 2px var(--accentcolor);
+  transition: all 0.5s linear;
+  color: white;
+}
+
+.link-tree a:hover {
+  background-color: var(--bgcolor);
+  color: var(--accentcolor);
+}
+
+@media (min-width: 1024px) {
+  .link-tree {
+    width: 40vw;
+  }
+}
