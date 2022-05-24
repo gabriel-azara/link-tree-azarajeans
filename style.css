@@ -33,6 +33,10 @@ body {
   background-color: var(--logocolor);
 }
 
+.link-tree .logo :nth-child(4) {
+  fill: rgb(34, 41, 121);
+}
+
 .link-tree .logo:hover {
   background-color: var(--logocolor);
 }
@@ -56,6 +60,7 @@ body {
   font-size: 1.1rem;
   font-weight: bold;
   border: solid 2px var(--accentcolor);
+  border-radius: 1.2rem;
   transition: all 0.5s linear;
   color: white;
 }
